@@ -1,0 +1,394 @@
+  <script>
+    $(document).ready(function(){
+       $('.parallax').parallax();
+       $(".button-collapse").sideNav();
+       $('.slider').slider();
+       $('.scrollspy').scrollSpy({
+           scrollOffset:30
+       });
+       $('.modal').modal();
+       $('.button-collapse').sideNav({
+          menuWidth: 200, // Default is 300
+          edge: 'right', // Choose the horizontal origin
+          closeOnClick: true, // Closes side-nav on <a> clicks, useful for Angular/Meteor
+          draggable: true // Choose whether you can drag to open on touch screens
+        });
+
+       // Scrollbar Code
+       var scroll_start = 0;
+       var startchange = $('#startchange');
+       var offset = startchange.offset();
+      if (startchange.length){
+       $(document).scroll(function() { 
+          scroll_start = $(this).scrollTop();
+          if(scroll_start > offset.top) {
+              $("#my_navbar").removeClass('light transparent z-depth-0');
+              $("#my_navbar").addClass('customcolor z-depth-5' );
+              $("#my_navbar a").addClass('light teal-text text-accent-4');
+              
+           } else {
+              $("#my_navbar").removeClass('customcoler z-depth-5');
+              $("#my_navbar").addClass('light transparent z-depth-0');
+              $("#my_navbar a").removeClass('light teal-text text-accent-4');
+           }
+        });
+      } 
+
+
+    });
+</script>
+
+    <ul class="side-nav" id="mobile-demo">
+        <li><a href="#header">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#footer">Contact Info</a></li>
+      </ul>
+
+<header id="header">
+  <div id="index-banner" class="parallax-container">
+    <div class="navbar-fixed">
+      <nav class="transparent z-depth-0" id="my_navbar">
+          <div class="nav-wrapper container">
+            <a id="logo-container" href="#!" class="brand-logo light">Luis Salazar</a>
+            <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#footer">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+    </div>
+
+      <div class="container" id="startchange">
+        <br><br>
+        
+        <div class="row right">
+        <h1 class="header white-text" >Web Developer</h1>
+         <h5 class="header light white-text">Specializing in Javascript, Python, and Ruby</h5>
+         <div class="row center">
+         <a class="modal-trigger waves-effect waves-light btn teal accent-4" href="#modal1">Resume</a>
+         </div>
+        </div>
+  
+          <!-- Modal Structure -->
+          <div id="modal1" class="modal modal-fixed-footer">
+            <div class="modal-content">
+              <object data="static/images/Luis_Salazar_Resume.pdf" type="application/pdf" style="overflow: scroll; width: inherit; height: 100%;"></object>
+            </div>
+            <div class="modal-footer">
+              <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Close</a>
+              <a href="static/images/Luis_Salazar_Resume.pdf" download="Luis_Salazar_Resume.pdf" class="modal-action modal-close waves-effect waves-green btn-flat">Download</a>
+            </div>
+          </div>
+       
+        <br><br>
+
+      </div>
+   
+    <div class="parallax"><img src="static/images/background.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+</header>
+
+<!-- Skills Section -->
+    <div id="skills" class="container section" style="padding-top: 0;">
+      <div class="section" style="padding-top: 45px;">
+        <div class="col s12 m4">
+            <div class="row">
+              <h2 class="light">Skills</h2>
+              <h6 class=" light">These are some of the technologies that i'm familiar with.</h6>
+            </div>
+            <div class="row">
+              <div class="col 12 m2 s6">
+                <img src="static/images/html5.png" style="width: 90%; height: auto;" title="HTML5, CSS3, Javascript">
+              </div>
+              <div class="col 12 m2 s6">
+                <img src="static/images/angularjs.png" style="width: 90%; height: auto;" title="Angular">
+              </div>
+              <div class="col 12 m2 s6">
+                <img src="static/images/mongodb.png" style="width: 90%; height: auto;" title="MongoDB">
+              </div>
+              <div class="col 12 m2 s6">
+                <img src="static/images/nodejs.png" style="width: 90%; height: auto;" title="Node.js">
+              </div>
+              <div class="col 12 m2 s6">
+                <img src="static/images/npm.png" style="width: 90%; height: auto;" title="npm">
+              </div>
+              <div class="col 12 m2 s6">
+                <img src="static/images/sqlite.png" style="width: 90%; height: auto;" title="SQLite">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col 12 m2 s6">
+                <img src="static/images/django.png" style="width: 90%; height: auto;" title="django">
+              </div>
+              <div class="col 12 m2 s6">
+                <img src="static/images/flask.png" style="width: 90%; height: auto;" title="Flask">
+              </div>
+              
+              <div class="col 12 m2 s6">
+                <img src="static/images/python.png" style="width: 90%; height: auto;" title="Python">
+              </div>
+              <div class="col 12 m2 s6">
+                <img src="static/images/mysql.png" style="width: 90%; height: auto;" title="mySQL">
+              </div>
+              <div class="col 12 m2 s6">
+                <img src="static/images/rails.png" style="width: 90%; height: auto;" title="Rails">
+              </div>
+              <div class="col 12 m2 s6">
+                <img src="static/images/ruby.png" style="width: 90%; height: auto;" title="Ruby">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col 12 m2 s6">
+                <img src="static/images/postgres.png" style="width: 90%; height: auto;" title="PostgreSQL">
+              </div>
+              <div class="col 12 m2 s6">
+                <img src="static/images/githubskill.png" style="width: 90%; height: auto;" title="Github">
+              </div>
+              <div class="col 12 m2 s6">
+                <img src="static/images/terminal.png" style="width: 90%; height: auto;" title="Terminal">
+              </div>
+              <div class="col 12 m2 s6">
+                <img src="static/images/mamp.png" style="width: 90%; height: auto;" title="Mamp">
+              </div>
+              <div class="col 12 m2 s6">
+                <img src="static/images/vagrant.png" style="width: 90%; height: auto;" title="Vagrant">
+              </div>
+              <div class="col 12 m2 s6">
+                <img src="static/images/aws.png" style="width: 90%; height: auto;" title="AWS">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col 12 m2 s6">
+                <img src="static/images/sublime.png" style="width: 90%; height: auto;" title="Sublime">
+              </div>
+              <div class="col 12 m2 s6">
+                <img src="static/images/bower2.png" style="width: 90%; height: auto;" title="Bower">
+              </div>
+              <div class="col 12 m2 s6">
+                <img src="static/images/materialize.png" style="width: 90%; height: auto;" title="Materialize">
+              </div>
+              <div class="col 12 m2 s6">
+                <img src="static/images/jquery.png" style="width: 90%; height: auto;" title="JQuery">
+              </div>
+              <div class="col 12 m2 s6">
+                <img src="static/images/json.png" style="width: 90%; height: auto;" title="JSON">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Mid Parallax -->
+  <div class="parallax-container">
+    <div class="parallax"><img src="static/images/code.jpg"></div>
+  </div>
+
+  <!-- Project Sections -->
+  <div id="projects" class="container section">
+    <div class="section">
+      <div class="col s12 m4">
+
+        <div class="row">
+              <h2 class="light">Projects</h2>
+              <h6 class=" light">Check out some of the projects i've done!</h6>
+        </div>
+        <div class="row">
+          <!-- Mainstage blog -->
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <div class="slider">
+                  <ul class="slides">
+                    <li>
+                      <img class="activator" src="static/images/mainstage1.png"> 
+                    </li>
+                    <li>
+                      <img class="activator" src="static/images/mainstage2.png"> 
+                    </li>
+                    <li>
+                      <img class="activator" style="background-position: initial;" src="static/images/mainstage3.png"> 
+                    </li>
+                    <li>
+                      <img class="activator" style="background-position: initial;" src="static/images/mainstage4.png"> 
+                    </li>
+                    <li>
+                      <img class="activator" style="background-position: initial;" src="static/images/mainstage5.png"> 
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Mainstage Blog<i class="material-icons right">more_vert</i></span>
+                <p><a href="https://github.com/salazarlg24/Mainstage_blog">View on Github</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Mainstage Blog<i class="material-icons right">close</i></span>
+                <p>Simple Blog built with Ruby on Rails.
+                    After a user registers or logs in, they are taken to the blog dashboard where they can leave comments on the blog they are viewing.</p>
+              </div>
+            </div>
+          </div>
+
+           <!-- exp -->
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <div class="slider">
+                  <ul class="slides">
+                    <li>
+                      <img class="activator" src="static/images/exp1.png"> 
+                    </li>
+                    <li>
+                      <img class="activator" src="static/images/exp2.png"> 
+                    </li>
+                    <li>
+                      <img class="activator" src="static/images/exp.png"> 
+                    </li>
+                    <li>
+                      <img class="activator" src="static/images/exp3.png"> 
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">exp {Explore. Experience}<i class="material-icons right">more_vert</i></span>
+                <p><a href="https://github.com/salazarlg24/exp_project">View on Github</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">exp.<i class="material-icons right">close</i></span>
+                <p>Built with JavaScript (MongoDB,Express,AngularJS,Node.js).
+                    A local event finder application. After a user has logged in or registered they are taken to a dashboard where multiple events are displayed, the user has the option to join or go to the create page to construct an event of their own. (Google Maps API integration) </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Professional Networking -->
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <div class="slider">
+                  <ul class="slides">
+                    <li>
+                      <img class="activator" src="static/images/professional1.png"> 
+                    </li>
+                    <li>
+                      <img class="activator" src="static/images/professional2.png"> 
+                    </li>
+                    <li>
+                      <img class="activator" style="background-position: initial;" src="static/images/professional3.png"> 
+                    </li>
+                    <li>
+                      <img class="activator" style="background-position: initial;" src="static/images/professional4.png"> 
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Professional Networking (Under Construction)<i class="material-icons right">more_vert</i></span>
+                <p><a href="https://github.com/salazarlg24/Professional_Networking">View on Github</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Professional Networking (Under Contruction)<i class="material-icons right">close</i></span>
+                <p>Social media application allowing users to connect with other users. Built with Ruby on Rails.
+                    Similar to Linkedin, after creating a profile, a user may view other user's profile and choose to add them to their network. Any user that has requested to join your network will appear on your invitations table, you then have to option to accept or ignore it.(RESTful architecture utilized. Rails ActiveRecord applied for front-end queary logic. PostgreSQL used for database.) </p>
+              </div>
+            </div>
+          </div>
+          <!-- QuickBuy -->
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-image waves-effect waves-block waves-light">
+                <div class="slider">
+                  <ul class="slides">
+                    <li>
+                      <img class="activator" style="background-position: initial;" src="static/images/quickbuy1.png"> 
+                    </li>
+                    <li>
+                      <img class="activator" style="background-position: initial;" src="static/images/quickbuy2.png"> 
+                    </li>
+                    <li>
+                      <img class="activator" style="background-position: initial;" src="static/images/quickbuy4.png"> 
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">QuickBuy (Under Construction)<i class="material-icons right">more_vert</i></span>
+                <p><a href="https://github.com/salazarlg24/Mini_Store">View on Github</a></p>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">QuickBuy (Under Construction)<i class="material-icons right">close</i></span>
+                <p>Built with Javascript (MongoDB,Express,AngularJS,Node.js).
+                    An online market for users to browse, add, and buy products.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Paralax -->
+  <div class="parallax-container">
+    <div class="parallax"><img src="static/images/network.jpg"></div>
+  </div>
+  <!-- Footer -->
+  <div id="footer"></div>
+  <footer class="z-depth-1" style="background-color: #333">
+  <div class="container">
+    <div class="row">
+      <h2 style="margin-top: 0px;" class="light white-text">Contact</h2>
+    </div>
+    <!-- Contact Info -->
+    <div class="row">
+        <div class="col s4">
+          <div class="row">
+            <p class="white-text light"><a class="waves-effect waves-light btn-floating social linkedin" href="https://www.linkedin.com/in/luis-g-salazar/">
+            <i class="fa fa-linkedin"></i></a> LinkedIn</p>
+          </div>
+
+          <div class="row">
+            <p class="white-text light"><a class="waves-effect waves-light btn-floating social github" href="https://github.com/salazarlg24">
+            <i style="font-size: 38px;" class="fa fa-github"></i></a> Github</p>
+          </div>
+
+          <div class="row">
+            <p class="white-text light"><a class="waves-effect waves-light btn-floating social google" href="mailto:salazarlg24@gmail.com">
+            <i class="fa fa-google"></i> Sign in with google</a> Gmail</p>
+          </div>
+            
+            
+
+        </div>
+
+        <!-- About me -->
+        <div class="col s4">
+          <blockquote style="border-left: 2px solid #009688;" class="light white-text">I am a highly motivated web developer with a passion for learning new technologies and am dedicated to continue growing everyday. Developing web applications while watching as they grow and provide use to users is a great feeling which I have come to appreciate and strive to continue.</blockquote>
+        </div>
+        <!-- Profile Picture -->
+        <div class="col s4">
+          <img style="width: 100%; margin-left: 50px" src="static/images/luis_copy.jpg" class="circle respnsive-img z-depth-5">
+        </div>
+    </div>
+    <div class="center">
+    <a class="back-to-top btn-floating btn-large waves-effect waves-light blue-grey darken-1" href="#header"><i class="material-icons teal accent-4">keyboard_arrow_up</i></a>
+    </div>
+
+  </div>
+  </footer>
