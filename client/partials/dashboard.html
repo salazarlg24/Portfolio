@@ -2,6 +2,7 @@
     $(document).ready(function(){
        $('.parallax').parallax();
        $(".button-collapse").sideNav();
+       $('.tooltipped').tooltip({delay: 50});
        $('.slider').slider();
        $('.scrollspy').scrollSpy({
            scrollOffset:30
@@ -34,29 +35,30 @@
         });
       } 
 
-
     });
 </script>
 
     <ul class="side-nav" id="mobile-demo">
-        <li><a href="#header">Home</a></li>
+        <li><a href="/#!">Home</a></li>
+        <li><a href="#about_me">About Me</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#footer">Contact Info</a></li>
+        <li><a href="#connect">Connect</a></li>
       </ul>
 
-<header id="header">
+<header id="home">
   <div id="index-banner" class="parallax-container">
     <div class="navbar-fixed">
       <nav class="transparent z-depth-0" id="my_navbar">
           <div class="nav-wrapper container">
-            <a id="logo-container" href="#!" class="brand-logo light">Luis Salazar</a>
+            <a id="logo-container" href="/#!" class="brand-logo light">Luis Salazar</a>
             <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
-              <li><a href="#header">Home</a></li>
+              <li><a href="/#!">Home</a></li>
+              <li><a href="#about_me">About Me</a></li>
               <li><a href="#skills">Skills</a></li>
               <li><a href="#projects">Projects</a></li>
-              <li><a href="#footer">Contact</a></li>
+              <li><a href="#connect">Connect</a></li>
             </ul>
           </div>
         </nav>
@@ -92,7 +94,27 @@
   </div>
 </header>
 
-<!-- Skills Section -->
+  <!-- About Me -->
+    <div id="about_me" class="container section">
+      <div class="row">
+        <div class=" col s12 m6 center">
+          <h2 class="light">About Luis</h2>
+          <p class="light"> Code. Coffee. Rugby.</p>
+           <!-- Profile Picture -->
+            <img style="width: 50%;" src="static/images/luis_copy.jpg" class="circle respnsive-img z-depth-5 respnsive-img">
+
+         
+        </div>
+
+        <div class="col s12 m6">
+          <p class="light" style="margin-top: 100px;">I am a highly motivated web developer with a passion for learning new technologies and am dedicated to continue growing everyday. Developing web applications while watching as they grow and provide use to users is a great feeling which I have come to appreciate and strive to continue.</p>
+          <p class="light">After coding fiercely for hours on end, I enjoy getting out doors. Usually playing a sport that's kind of like American Football but not, with guys tackling each other trying to get a ball, while wearing short shorts... Better know as the game of Rugby!</p>
+       </div>
+
+    </div>
+  </div>
+
+  <!-- Skills Section -->
     <div id="skills" class="container section" style="padding-top: 0;">
       <div class="section" style="padding-top: 45px;">
         <div class="col s12 m4">
@@ -102,83 +124,83 @@
             </div>
             <div class="row">
               <div class="col 12 m2 s6">
-                <img src="static/images/html5.png" style="width: 90%; height: auto;" title="HTML5, CSS3, Javascript">
+                <img class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="HTML5, CSS3, JavaScript" src="static/images/html5.png" style="width: 90%; height: auto;" alt="HTML5, CSS3, Javascript">
               </div>
               <div class="col 12 m2 s6">
-                <img src="static/images/angularjs.png" style="width: 90%; height: auto;" title="Angular">
+                <img class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="AngularJS" src="static/images/angularjs.png" style="width: 90%; height: auto;" alt="Angular">
               </div>
               <div class="col 12 m2 s6">
-                <img src="static/images/mongodb.png" style="width: 90%; height: auto;" title="MongoDB">
+                <img class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="MongoDB" src="static/images/mongodb.png" style="width: 90%; height: auto;" alt="MongoDB">
               </div>
               <div class="col 12 m2 s6">
-                <img src="static/images/nodejs.png" style="width: 90%; height: auto;" title="Node.js">
+                <img class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Node.js" src="static/images/nodejs.png" style="width: 90%; height: auto;" alt="Node.js">
               </div>
               <div class="col 12 m2 s6">
-                <img src="static/images/npm.png" style="width: 90%; height: auto;" title="npm">
+                <img class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="npm" src="static/images/npm.png" style="width: 90%; height: auto;" alt="npm">
               </div>
               <div class="col 12 m2 s6">
-                <img src="static/images/sqlite.png" style="width: 90%; height: auto;" title="SQLite">
+                <img class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="SQLite" src="static/images/sqlite.png" style="width: 90%; height: auto;" alt="SQLite">
               </div>
             </div>
 
             <div class="row">
               <div class="col 12 m2 s6">
-                <img src="static/images/django.png" style="width: 90%; height: auto;" title="django">
+                <img class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Django" src="static/images/django.png" style="width: 90%; height: auto;" alt="django">
               </div>
               <div class="col 12 m2 s6">
-                <img src="static/images/flask.png" style="width: 90%; height: auto;" title="Flask">
+                <img class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Flask" src="static/images/flask.png" style="width: 90%; height: auto;" alt="Flask">
               </div>
               
               <div class="col 12 m2 s6">
-                <img src="static/images/python.png" style="width: 90%; height: auto;" title="Python">
+                <img class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Python" src="static/images/python.png" style="width: 90%; height: auto;" alt="Python">
               </div>
               <div class="col 12 m2 s6">
-                <img src="static/images/mysql.png" style="width: 90%; height: auto;" title="mySQL">
+                <img class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="MySQL" src="static/images/mysql.png" style="width: 90%; height: auto;" alt="mySQL">
               </div>
               <div class="col 12 m2 s6">
-                <img src="static/images/rails.png" style="width: 90%; height: auto;" title="Rails">
+                <img class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Rails" src="static/images/rails.png" style="width: 90%; height: auto;" alt="Rails">
               </div>
               <div class="col 12 m2 s6">
-                <img src="static/images/ruby.png" style="width: 90%; height: auto;" title="Ruby">
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col 12 m2 s6">
-                <img src="static/images/postgres.png" style="width: 90%; height: auto;" title="PostgreSQL">
-              </div>
-              <div class="col 12 m2 s6">
-                <img src="static/images/githubskill.png" style="width: 90%; height: auto;" title="Github">
-              </div>
-              <div class="col 12 m2 s6">
-                <img src="static/images/terminal.png" style="width: 90%; height: auto;" title="Terminal">
-              </div>
-              <div class="col 12 m2 s6">
-                <img src="static/images/mamp.png" style="width: 90%; height: auto;" title="Mamp">
-              </div>
-              <div class="col 12 m2 s6">
-                <img src="static/images/vagrant.png" style="width: 90%; height: auto;" title="Vagrant">
-              </div>
-              <div class="col 12 m2 s6">
-                <img src="static/images/aws.png" style="width: 90%; height: auto;" title="AWS">
+                <img class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Ruby" src="static/images/ruby.png" style="width: 90%; height: auto;" alt="Ruby">
               </div>
             </div>
 
             <div class="row">
               <div class="col 12 m2 s6">
-                <img src="static/images/sublime.png" style="width: 90%; height: auto;" title="Sublime">
+                <img class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="PostgreSQL" src="static/images/postgres.png" style="width: 90%; height: auto;" alt="PostgreSQL">
               </div>
               <div class="col 12 m2 s6">
-                <img src="static/images/bower2.png" style="width: 90%; height: auto;" title="Bower">
+                <img class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Github" src="static/images/githubskill.png" style="width: 90%; height: auto;" alt="Github">
               </div>
               <div class="col 12 m2 s6">
-                <img src="static/images/materialize.png" style="width: 90%; height: auto;" title="Materialize">
+                <img class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Terminal" src="static/images/terminal.png" style="width: 90%; height: auto;" alt="Terminal">
               </div>
               <div class="col 12 m2 s6">
-                <img src="static/images/jquery.png" style="width: 90%; height: auto;" title="JQuery">
+                <img class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="MAMP" src="static/images/mamp.png" style="width: 90%; height: auto;" alt="Mamp">
               </div>
               <div class="col 12 m2 s6">
-                <img src="static/images/json.png" style="width: 90%; height: auto;" title="JSON">
+                <img class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Vagrant" src="static/images/vagrant.png" style="width: 90%; height: auto;" alt="Vagrant">
+              </div>
+              <div class="col 12 m2 s6">
+                <img class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="AWS" src="static/images/aws.png" style="width: 90%; height: auto;" alt="AWS">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col 12 m2 s6">
+                <img class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Sublime Text Editer" src="static/images/sublime.png" style="width: 90%; height: auto;" alt="Sublime">
+              </div>
+              <div class="col 12 m2 s6">
+                <img class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Bower" src="static/images/bower2.png" style="width: 90%; height: auto;" alt="Bower">
+              </div>
+              <div class="col 12 m2 s6">
+                <img class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="Materialize" src="static/images/materialize.png" style="width: 90%; height: auto;" alt="Materialize">
+              </div>
+              <div class="col 12 m2 s6">
+                <img class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="JQuery" src="static/images/jquery.png" style="width: 90%; height: auto;" alt="JQuery">
+              </div>
+              <div class="col 12 m2 s6">
+                <img class="tooltipped" data-position="bottom" data-delay="50" data-tooltip="JSON" src="static/images/json.png" style="width: 90%; height: auto;" alt="JSON">
               </div>
             </div>
 
@@ -189,7 +211,7 @@
     </div>
   </div>
 
-  <!-- Mid Parallax -->
+    <!-- Mid Parallax -->
   <div class="parallax-container">
     <div class="parallax"><img src="static/images/code.jpg"></div>
   </div>
@@ -348,47 +370,38 @@
   <div class="parallax-container">
     <div class="parallax"><img src="static/images/network.jpg"></div>
   </div>
+
   <!-- Footer -->
-  <div id="footer"></div>
-  <footer class="z-depth-1" style="background-color: #333">
-  <div class="container">
+  <div id="connect"></div>
+  <div class="section center" style="background-color: #333">
     <div class="row">
-      <h2 style="margin-top: 0px;" class="light white-text">Contact</h2>
+      <h2 class="light white-text">Connect</h2>
     </div>
     <!-- Contact Info -->
-    <div class="row">
-        <div class="col s4">
+    <div class="row white-text light">
+        <div class="col s12 m12">
           <div class="row">
-            <p class="white-text light"><a class="waves-effect waves-light btn-floating social linkedin" href="https://www.linkedin.com/in/luis-g-salazar/">
-            <i class="fa fa-linkedin"></i></a> LinkedIn</p>
+            <a class="waves-effect waves-light btn-floating social linkedin" href="https://www.linkedin.com/in/luis-g-salazar/">
+            <i class="fa fa-linkedin"></i></a> LinkedIn 
+          <!-- </div> -->
+
+          <!-- <div class="row"> -->
+            <a class="waves-effect waves-light btn-floating social github" href="https://github.com/salazarlg24">
+            <i style="font-size: 38px;" class="fa fa-github"></i></a> Github 
+          <!-- </div> -->
+
+          <!-- <div class="row"> -->
+            <a class="waves-effect waves-light btn-floating social google" href="mailto:salazarlg24@gmail.com">
+            <i class="fa fa-google"></i> Sign in with google</a> Gmail 
+         <!--  </div> -->
           </div>
-
-          <div class="row">
-            <p class="white-text light"><a class="waves-effect waves-light btn-floating social github" href="https://github.com/salazarlg24">
-            <i style="font-size: 38px;" class="fa fa-github"></i></a> Github</p>
-          </div>
-
-          <div class="row">
-            <p class="white-text light"><a class="waves-effect waves-light btn-floating social google" href="mailto:salazarlg24@gmail.com">
-            <i class="fa fa-google"></i> Sign in with google</a> Gmail</p>
-          </div>
-            
-            
-
-        </div>
-
-        <!-- About me -->
-        <div class="col s4">
-          <blockquote style="border-left: 2px solid #009688;" class="light white-text">I am a highly motivated web developer with a passion for learning new technologies and am dedicated to continue growing everyday. Developing web applications while watching as they grow and provide use to users is a great feeling which I have come to appreciate and strive to continue.</blockquote>
-        </div>
-        <!-- Profile Picture -->
-        <div class="col s4">
-          <img style="width: 100%; margin-left: 50px" src="static/images/luis_copy.jpg" class="circle respnsive-img z-depth-5">
+         </div>
+       
+        <div class="row">
+         <a class="back-to-top btn-floating btn-large waves-effect waves-light blue-grey darken-1" href="/#!"><i class="material-icons">keyboard_arrow_up</i></a>
         </div>
     </div>
-    <div class="center">
-    <a class="back-to-top btn-floating btn-large waves-effect waves-light blue-grey darken-1" href="#header"><i class="material-icons teal accent-4">keyboard_arrow_up</i></a>
-    </div>
-
   </div>
-  </footer>
+
+
+
